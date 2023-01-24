@@ -6,11 +6,9 @@ m = 0
 suma = 0
 n = int(input('ingrese el primer numero entero'))
 m = int(input('ingrese el segundo numero entero'))
-maximo = max(n,m)
+maximo = max(n,m)+1
 minimo = min(n,m)
 for i in range(minimo,maximo):
-    if minimo % 2 == 0:
-        suma = suma+minimo
-        minimo += 1
-        print(minimo)
+    if i % 2 == 0:
+        suma += i
 print(suma)
