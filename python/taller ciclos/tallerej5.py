@@ -2,14 +2,16 @@
 #  luego imprima todos los numeros primos que hay antes de ese numero ingresado.
 
 numero1 = 0
+ciclo = True
 numero1 = int(
     input('Ingrese el numero mayor a 100 al que le desea hallar los numeros primos'))
-while True:
+while ciclo:
     if numero1 < 100:
         print('Este numero no es valido favor ingresar uno mayor a 100')
         numero1 = int(
-            input('Ingrese el numero mayor a 100 al que le desea hallar los numeros primos'))
-    if numero1 > 100:
+            input('Ingrese el numero mayor a 100 al que le desea hallar los numeros primos'))      
+    while numero1 > 100:
+        if numero1 > 100:
             for x in range(0, (numero1+1)):
                 primo1 = (x/2)
                 primo2 = (x/3)
@@ -37,5 +39,7 @@ while True:
                     if primo4.is_integer():
                         continue
                     else:
-                        print(x)              
+                        print(x) 
+        numero1 = 0
     break
+                
