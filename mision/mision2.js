@@ -65,10 +65,10 @@ while (ciclo > 0) {
                 "\n 0. salir"
             )
           );
-          if (isNaN(marca) || marca < 1 || marca > 6) {
+          if (isNaN(marca) || marca < 0 || marca > 6) {
             alert("por favor ingrese un numero de la lista");
           }
-        } while (marca < 1 || marca > 6);
+        } while (marca < 0 || marca > 6);
         {
           switch (marca) {
             case 1:
