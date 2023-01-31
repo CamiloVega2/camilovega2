@@ -955,7 +955,6 @@ const pokemon = {
   weight: 40,
 };
 
-
 const { stats } = pokemon;
 const [, , , ...rest] = stats;
 
