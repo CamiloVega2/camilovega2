@@ -10,7 +10,7 @@ let menu = 1;
 let opciónMenu = 0;
 let verificarNombre = "";
 let ubicacionAnimales = 0;
-for( let i = 0; i < 3 ; i++){
+for (let i = 0; i < 3; i++) {
   opciónMenu = parseInt(
     prompt(
       "Ingrese la accion que desea realizar: \n 1. Registrar un animal" +
@@ -23,6 +23,7 @@ for( let i = 0; i < 3 ; i++){
       animal = prompt("Ingrese el nombre del animal");
       if (animales.includes(animal)) {
         alert("Este animal ya esta registrado");
+        break;
       } else {
         animales.push(animal);
         break;
