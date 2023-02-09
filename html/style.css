@@ -1,6 +1,57 @@
-#name{
-    border-color: red;
+.titulo {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: rgb(96, 0, 185);
 }
-#email{
-    border-color: aqua;
+
+.Datospersonales {
+    padding-left: 570px;
+    padding-right: 570px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body {
+    background-color: rgba(164, 113, 247, 0.425);
+}
+
+.containergeneral {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: row
+}
+
+.a {
+    padding-bottom: -30px;
+    margin: 0px;
+}
+
+.container1 {
+    
+    background-color: white;
+    display: flex;
+    flex-direction: column
+}
+
+.container2 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+}
+.container3{
+background-color: white;
+}
+
+.b {
+    margin: 8px
+}
+.c{
+    position: relative;right: 270px;top: 10px;
 }
