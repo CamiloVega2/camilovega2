@@ -1,4 +1,7 @@
 .titulo {
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     background-color: white;
@@ -21,8 +24,6 @@ body {
 }
 
 .containergeneral {
-    background-color: white;
-    padding: 10px;
     display: flex;
     flex-direction: row
 }
@@ -33,7 +34,8 @@ body {
 }
 
 .container1 {
-    
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     background-color: white;
     display: flex;
     flex-direction: column
@@ -46,6 +48,8 @@ body {
     justify-content: space-around
 }
 .container3{
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
 background-color: white;
 }
 

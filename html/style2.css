@@ -1,0 +1,23 @@
+.titulo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: aqua;
+}
+.titulosceldas{
+    background-color: green;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+td{
+    border-style: dotted;
+    text-align: center;
+}
+.cajita{
+    display: flex;
+    justify-content: center;
+}
+tr:hover{
+    background-color: chartreuse;
+    cursor: cell;
+}

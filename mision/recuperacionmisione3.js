@@ -96,25 +96,27 @@ while (ciclo > 0) {
           break;
         }
         for (let j = 0; j < cantidadTalentos; j++) {
-          while (cantidadTalentos > 0) {do{
-            talentos[j].mision1 = parseFloat(
-              prompt(
-                `Ingrese la nota de la mision 1 entre 0 y 100 de ${talentos[j].nombre}`
-              )
-            );
-            if (
-              isNaN(talentos[j].mision1) ||
-              talentos[j].mision1 < 0 ||
-              talentos[j].mision1 > 100
-            ) {
-              alert("Ingrese una nota valida entre 0 y 100");
-            }}
-            while (
+          while (cantidadTalentos > 0) {
+            do {
+              talentos[j].mision1 = parseFloat(
+                prompt(
+                  `Ingrese la nota de la mision 1 entre 0 y 100 de ${talentos[j].nombre}`
+                )
+              );
+              if (
+                isNaN(talentos[j].mision1) ||
+                talentos[j].mision1 < 0 ||
+                talentos[j].mision1 > 100
+              ) {
+                alert("Ingrese una nota valida entre 0 y 100");
+              }
+            } while (
               talentos[j].mision1 < 0 ||
               talentos[j].mision1 > 100 ||
               isNaN(talentos[j].mision1)
-            ) {
-             break
+            );
+            {
+              break;
             }
           }
         }
@@ -122,12 +124,13 @@ while (ciclo > 0) {
         break;
       case 4:
         if (cantidadTalentos === 0) {
-            alert("Debe primero registrar la cantidad de talentos");
-            menu = 0;
-            break;
-          }
-          for (let j = 0; j < cantidadTalentos; j++) {
-            while (cantidadTalentos > 0) {do{
+          alert("Debe primero registrar la cantidad de talentos");
+          menu = 0;
+          break;
+        }
+        for (let j = 0; j < cantidadTalentos; j++) {
+          while (cantidadTalentos > 0) {
+            do {
               talentos[j].mision2 = parseFloat(
                 prompt(
                   `Ingrese la nota de la mision 2 entre 0 y 100 de ${talentos[j].nombre}`
@@ -139,26 +142,28 @@ while (ciclo > 0) {
                 talentos[j].mision2 > 100
               ) {
                 alert("Ingrese una nota valida entre 0 y 100");
-              }}
-              while (
-                talentos[j].mision2< 0 ||
-                talentos[j].mision2 > 100 ||
-                isNaN(talentos[j].mision2)
-              ) {
-               break
               }
+            } while (
+              talentos[j].mision2 < 0 ||
+              talentos[j].mision2 > 100 ||
+              isNaN(talentos[j].mision2)
+            );
+            {
+              break;
             }
           }
-          menu = 0;
-          break;
+        }
+        menu = 0;
+        break;
       case 5:
         if (cantidadTalentos === 0) {
-            alert("Debe primero registrar la cantidad de talentos");
-            menu = 0;
-            break;
-          }
-          for (let j = 0; j < cantidadTalentos; j++) {
-            while (cantidadTalentos > 0) {do{
+          alert("Debe primero registrar la cantidad de talentos");
+          menu = 0;
+          break;
+        }
+        for (let j = 0; j < cantidadTalentos; j++) {
+          while (cantidadTalentos > 0) {
+            do {
               talentos[j].mision3 = parseFloat(
                 prompt(
                   `Ingrese la nota de la mision 3 entre 0 y 100 de ${talentos[j].nombre}`
@@ -170,26 +175,28 @@ while (ciclo > 0) {
                 talentos[j].mision3 > 100
               ) {
                 alert("Ingrese una nota valida entre 0 y 100");
-              }}
-              while (
-                talentos[j].mision3 < 0 ||
-                talentos[j].mision3 > 100 ||
-                isNaN(talentos[j].mision3)
-              ) {
-               break
               }
+            } while (
+              talentos[j].mision3 < 0 ||
+              talentos[j].mision3 > 100 ||
+              isNaN(talentos[j].mision3)
+            );
+            {
+              break;
             }
           }
-          menu = 0;
-          break;
+        }
+        menu = 0;
+        break;
       case 6:
         if (cantidadTalentos === 0) {
-            alert("Debe primero registrar la cantidad de talentos");
-            menu = 0;
-            break;
-          }
-          for (let j = 0; j < cantidadTalentos; j++) {
-            while (cantidadTalentos > 0) {do{
+          alert("Debe primero registrar la cantidad de talentos");
+          menu = 0;
+          break;
+        }
+        for (let j = 0; j < cantidadTalentos; j++) {
+          while (cantidadTalentos > 0) {
+            do {
               talentos[j].mision4 = parseFloat(
                 prompt(
                   `Ingrese la nota de la prueba final entre 0 y 100 de ${talentos[j].nombre}`
@@ -201,18 +208,19 @@ while (ciclo > 0) {
                 talentos[j].mision4 > 100
               ) {
                 alert("Ingrese una nota valida entre 0 y 100");
-              }}
-              while (
-                talentos[j].mision4 < 0 ||
-                talentos[j].mision4 > 100 ||
-                isNaN(talentos[j].mision4)
-              ) {
-               break
               }
+            } while (
+              talentos[j].mision4 < 0 ||
+              talentos[j].mision4 > 100 ||
+              isNaN(talentos[j].mision4)
+            );
+            {
+              break;
             }
           }
-          menu = 0;
-          break;
+        }
+        menu = 0;
+        break;
       case 7:
         if (cantidadTalentos === 0) {
           alert("Debe primero registrar la cantidad de talentos");
@@ -273,17 +281,19 @@ while (ciclo > 0) {
           menu = 0;
           break;
         }
-        for (let i = 0; i < talentos.length; i++) {
-          talentos[i].promedio =
-            (talentos[i].mision1 +
-              talentos[i].mision2 +
-              talentos[i].mision3 +
-              talentos[i].mision4) /
-            4;
-          console.log(
-            `Nombre: ${talentos[i].nombre} Nota: ${talentos[i].promedio}`
-          );
-        }
+      for (let i = 0; i < talentos.length; i++) {
+        talentos[i].promedio =
+          (talentos[i].mision1 +
+            talentos[i].mision2 +
+            talentos[i].mision3 +
+            talentos[i].mision4) /
+          4;
+        console.log(
+          `Nombre: ${talentos[i].nombre} Nota: ${talentos[i].promedio.toFixed(2)}`
+        );
+      }
+      menu = 0
+      break;
       case 11:
         if (cantidadTalentos === 0) {
           alert("Debe primero registrar la cantidad de talentos");
@@ -295,6 +305,8 @@ while (ciclo > 0) {
             `Codigo: ${talentos[i].codigo} Nombre: ${talentos[i].nombre} Nota mision 1: ${talentos[i].mision1} Nota mision 2: ${talentos[i].mision2} Nota mision 3: ${talentos[i].mision3} Nota prueba final: ${talentos[i].mision4}`
           );
         }
+        menu = 0
+        break;
       case 12:
         if (cantidadTalentos === 0) {
           alert("Debe primero registrar la cantidad de talentos");
@@ -302,6 +314,8 @@ while (ciclo > 0) {
           break;
         }
         console.log("Juan Camilo Vega Vega");
+        menu = 0
+        break;
       case 13:
         ciclo = -1;
         break;
