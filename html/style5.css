@@ -1,0 +1,52 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 300px;
+    height: 250px;
+}
+
+.menuplatos {
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+    padding-right: 20px;
+}
+
+.titulo {
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.titulo1 {
+    color: rgb(255, 191, 0);
+}
+
+li {
+    color: blue;
+    font-size: 20px;
+}
+
+.titulotexto {
+    color: blue;
+}
+
+.piedepagina {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.479);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.cajaimagen {
+    width: 300px;
+    height: 250px;
+}
+
+.cajatexto {
+    background-color: rgba(128, 128, 128, 0.349);
+    padding: 20px;
+}

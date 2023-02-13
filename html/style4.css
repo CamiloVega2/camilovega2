@@ -1,0 +1,47 @@
+.circle2{
+    background-color: #ff7979;
+height: 200px;
+width: 200px;
+border-radius: 50%;
+position: fixed;
+top: -90px;
+left: -90px;
+}
+.texto{
+    width: 1000px;
+    height: 1062.3px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 1000px;
+    height: 666.667px;
+}
+body{
+    width: 1846px;
+    height: 1262.1px;
+    
+}
+.boton{
+    cursor: pointer;
+position: absolute;
+top: 50%;
+left: 50%;
+height: 100px;
+background: transparent;
+border: 0;
+font-size: 26px;
+color: #fff;
+}
+.boton img{
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+    width: 50px;
+    height: 40px;
+}
+.texto small{
+    color: #555;
+font-style: italic;
+}
