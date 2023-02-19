@@ -25,6 +25,10 @@ body{
     background-color: white;
     height: 250px;
     width: 250px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 div:hover{
     background-color: chocolate;
