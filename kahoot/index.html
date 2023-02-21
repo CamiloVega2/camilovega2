@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kahoot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-screen bg-cyan-400">
+    <div class="h-screen mr-[100px] ml-[100px] grid grid-cols-1 content-center">
+        <div>
+            <p id="pregunta" class="p-[20px] text-center mt-[10px] bg-red-400">Primera pregunta</p>
+        </div>
+        <div class="flex flex.row justify-center ">
+            <div class="w-full">
+                <div>
+                    <p id="opcion1" class="text-center bg-orange-500 hover:bg-blue-600">Primera respuesta</p>
+                </div>
+                <div>
+                    <p id="opcion2" class="text-center bg-orange-500 hover:bg-blue-600">Segunda respuesta</p>
+                </div>
+            </div>
+            <div class="w-full">
+                <div>
+                    <p id="opcion3" class="text-center bg-orange-500 hover:bg-blue-600">Tercera respuesta</p>
+                </div>
+                <div>
+                    <p id="opcion4" class="text-center bg-orange-500 hover:bg-blue-600">Cuarta respuesta</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="text-center bg-green-500 h-[50px]">la respuesta correcta es:</p>
+        </div>
+
+    </div>
+
+</body>
+<script src="kahoot.js"></script>
+
+</html>

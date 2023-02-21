@@ -1,0 +1,30 @@
+{
+    "preguntas": [
+        {
+            "Pregunta1":"¿Cual es el unico animal que no sufre de cáncer?",
+            "Respuestas": {"a":"ratopín rasurado", "b":"Tiburón", "c":"león", "d":"serpiente"
+            },
+        "Respuestacorrecta1": "ratopín rasurado"
+        },
+        {"Pregunta2":"¿En que año se descubrió américa?",
+        "Respuestas": {"a": "1520", "b": "1680", "c": "1594", "d": "1492"
+            },
+        "Respuestacorrecta2": "1492"
+        },
+        {"Pregunta3":"¿En que año se invento la bicicleta?",
+        "Respuestas": {"a": "1920", "b": "1915", "c": "1850", "d": "1817"
+            },
+        "Respuestacorrecta3": "1817"
+        },
+        {"Pregunta4":"¿Cuál es el animal mas venenoso del mundo?",
+        "Respuestas": {"a":"rana dardo dorado", "b":"pulpo de anillos azules", "c":"araña brasileña", "d":"avispa de mar"
+            },
+        "Respuestacorrecta4": "avispa de mar"
+        },
+        {"Pregunta5":"¿Cuál es el animal mas grande del planeta?",
+        "Respuestas": {"a":"tiburón ballena", "b":"ballena orca", "c":"ballena azul de la antártica", "d":"elefante"
+            },
+        "Respuestacorrecta5": "ballena azul de la antártica"
+        }
+    ]
+}
