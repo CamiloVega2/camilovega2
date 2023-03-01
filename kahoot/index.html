@@ -9,33 +9,37 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="h-screen bg-cyan-400">
-    <div class="h-screen mr-[100px] ml-[100px] grid grid-cols-1 content-center">
-        <div>
-            <p id="pregunta" class="p-[20px] text-center mt-[10px] bg-red-400">Primera pregunta</p>
+<body class="h-screen bg-white">
+    <div id="contenedor" class="h-screen mr-[100px] ml-[100px] grid grid-cols-1 justify-center items-stretch">
+        <div class="p-[40px] bg-neutral-200 mt-[10px]">
+            <p id="pregunta" class="p-[20px] text-center mt-[10px] bg-red-400 rounded-[20px]">¿Qué videojuego fue
+                primero?</p>
         </div>
-        <div class="flex flex.row justify-center ">
-            <div class="w-full">
+        <div class="flex flex.row justify-center">
+            <div class="w-full bg-neutral-200">
                 <div>
-                    <p id="opcion1" class="text-center bg-orange-500 hover:bg-blue-600">Primera respuesta</p>
+                    <p id="opcion1" class="p-[20px] text-center bg-amber-400 hover:bg-blue-600 rounded-[10px] h-[80px]">
+                        A. Pac-man</p>
                 </div>
                 <div>
-                    <p id="opcion2" class="text-center bg-orange-500 hover:bg-blue-600">Segunda respuesta</p>
-                </div>
-            </div>
-            <div class="w-full">
-                <div>
-                    <p id="opcion3" class="text-center bg-orange-500 hover:bg-blue-600">Tercera respuesta</p>
-                </div>
-                <div>
-                    <p id="opcion4" class="text-center bg-orange-500 hover:bg-blue-600">Cuarta respuesta</p>
-                </div>
-            </div>
-        </div>
-        <div>
-            <p class="text-center bg-green-500 h-[50px]">la respuesta correcta es:</p>
-        </div>
+                    <p id="opcion2" class="p-[20px] text-center bg-lime-400 hover:bg-blue-600 rounded-[10px] h-[80px]">
+                        B. Tetris
 
+                    </p>
+                </div>
+            </div>
+            <div class="w-full bg-neutral-200">
+                <div>
+                    <p id="opcion3"
+                        class="p-[20px] text-center bg-orange-400 hover:bg-blue-600 rounded-[10px] h-[80px]"> C. Pong
+                    </p>
+                </div>
+                <div>
+                    <p id="opcion4" class="p-[20px] text-center bg-cyan-400 hover:bg-blue-600 rounded-[10px] h-[80px]">
+                        D. Donkey Kong</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
