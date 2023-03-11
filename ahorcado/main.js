@@ -54,6 +54,7 @@ function verificarletra() {
       } else {
         if (letras.includes(texto.value)) {
           alert("esta letra ya la uso");
+          contletras -= 1
           break;
         } else {
           contloss += 1;
