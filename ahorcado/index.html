@@ -9,13 +9,13 @@
     <title>Ahorcado</title>
 </head>
 
-<body class="h-screen bg-cover" style="background-image: url('https://humanidades.com/wp-content/uploads/2016/03/ciencia-e1557789923654-800x412.jpg');" >
+<body id = "body" class="h-screen bg-cover" style="background-image: url('https://humanidades.com/wp-content/uploads/2016/03/ciencia-e1557789923654-800x412.jpg');" >
     <div class="flex h-full">
-        <div  class="w-1/2 flex flex-wrap h-full justify-center items-center">
+        <div  class="w-1/2 flex flex-wrap h-full justify-center items-center" id="cajaletras">
             <div id="cajagrande"  class="my-[10%] mx-[10%] w-[50%] "></div>
         </div>
-        <div class="w-1/2">
-            <div class="flex w-full justify-around"><input id="cajadetexto" type="text" maxlength="1"
+        <div class="w-1/2" >
+            <div class="flex w-full justify-around"><input id="cajadetexto" type="text" maxlength="1" 
                     class="border-solid border-2 border-gray-100 bg-gray-400"><button id="btn"
                     class="border-solid border-2 border-blue-400 text-gray-200 border-gray-500 bg-gray-900">Enviar</button></div>
             <div id="palabra" class="flex w-full justify-between"></div>
@@ -54,5 +54,4 @@
         </div>
     </div>
     <script src="main.js"></script>
-
 </html>
