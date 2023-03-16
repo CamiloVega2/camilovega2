@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="h-screen bg-gradient-to-r from-blue-100 to-green-900">
+    <div class="h-full">
+        <form id="formulario" class="h-full flex flex-col justify-evenly items-center">
+            <p class="text-lg font-semibold">Nombre</p><input  class="border-solid border-2 border-blue-500/75"
+                id="nombre" type="text" required>
+            <p class="text-lg font-semibold">Apellidos</p><input 
+                class="border-solid border-2 border-blue-500/75" id="apellido" type="text" required>
+            <p class="text-lg font-semibold">Fecha de nacimiento</p><input 
+                class="border-solid border-2 border-blue-500/75" id="fechadenaciemiento" type="date" required>
+            <p class="text-lg font-semibold">Cedula</p><input class="border-solid border-2 border-blue-500/75"
+                id="cedula" type="text" maxlength="10" required >
+            <button id="btn" class="bg-green-500/75 border-solid border-2 border-gray-500/50 px-[2%] py-[1%]"
+                type="submit">Guardar</button>
+        </form>
+    </div>
+</body>
+<script src="main2.js"></script>
+
+</html>
