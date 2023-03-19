@@ -10,34 +10,39 @@
 </head>
 
 <body class="h-screen bg-gradient-to-r from-blue-100 to-green-900" id="body">
-    <div id="nombrescumple" class="w-[25%] bg-gradient-to-r from-blue-100 to-green-900/25 absolute top-[6%]">
-        <div class="flex">
-            <div class="text-center border-solid border border-blue-500/75 font-semibold w-1/2">Nombres
-                completos</div>
-            <div class="text-center border-solid border border-blue-500/75 font-semibold w-1/2">Cumpleaños
+    <div class="flex h-full w-full justify-between">
+        <div id="nombrescumple" class="w-[25%] ">
+            <div class="flex">
+                <div class="text-center border-solid border border-blue-500/75 font-semibold w-1/2">Nombres
+                    Completos</div>
+                <div class="text-center border-solid border border-blue-500/75 font-semibold w-1/2">Cumple años hoy?
+                </div>
+            </div>
+            <div class="w-full flex">
+                <div id="cajanombres" class="w-1/2 text-center border-solid border border-blue-500/75 font-medium">
+                </div>
+                <div id="cajafechas" class="w-1/2 text-center border-solid border border-blue-500/75 font-medium"></div>
             </div>
         </div>
-        <div class="w-full flex">
-            <div id="cajanombres" class="w-1/2 text-center border-solid border border-blue-500/75 font-medium"></div>
-            <div id="cajafechas" class="w-1/2 text-center border-solid border border-blue-500/75 font-medium"></div>
+        <div class="h-full">
+            <form id="formulario" class="h-full flex flex-col justify-evenly items-center">
+                <p class="text-lg font-semibold">Nombre</p><input class="border-solid border-2 border-blue-500/75"
+                    id="nombre" type="text" required>
+                <p class="text-lg font-semibold">Apellidos</p><input class="border-solid border-2 border-blue-500/75"
+                    id="apellido" type="text" required>
+                <p class="text-lg font-semibold">Fecha de nacimiento</p><input
+                    class="border-solid border-2 border-blue-500/75" id="fechadenaciemiento" type="date" required>
+                <p class="text-lg font-semibold">Cedula</p><input class="border-solid border-2 border-blue-500/75"
+                    id="cedula" type="text" maxlength="10" required>
+                <button id="btn" class="bg-green-500/75 border-solid border-2 border-blue-500/50 px-[2%] py-[1%]"
+                    type="submit">Guardar</button>
+            </form>
         </div>
-    </div>
-    <div class="h-full">
-        <form id="formulario" class="h-full flex flex-col justify-evenly items-center">
-            <p class="text-lg font-semibold">Nombre</p><input class="border-solid border-2 border-blue-500/75"
-                id="nombre" type="text" required>
-            <p class="text-lg font-semibold">Apellidos</p><input class="border-solid border-2 border-blue-500/75"
-                id="apellido" type="text" required>
-            <p class="text-lg font-semibold">Fecha de nacimiento</p><input
-                class="border-solid border-2 border-blue-500/75" id="fechadenaciemiento" type="date" required>
-            <p class="text-lg font-semibold">Cedula</p><input class="border-solid border-2 border-blue-500/75"
-                id="cedula" type="text" maxlength="10" required>
-            <button id="btn" class="bg-green-500/75 border-solid border-2 border-blue-500/50 px-[2%] py-[1%]"
-                type="submit">Guardar</button>
-        </form>
-    </div>
-    <div class="absolute top-[6%] left-[75%] flex"><input id="buscar" type="text" class="border-solid border-2 border-blue-500/75 mr-[5%]">
-        <div><a href="personas.html" type="submit" class="bg-gray-500/50 border-solid border-2 border-blue-500/75 ml-[5%] px-[5%] pt-[5%] pb-[7%]">Buscar</a href=""></div>
+        <div class="flex">
+            <div><input id="buscar" type="text" class="border-solid border-2 border-blue-500/75"></div>
+            <div><a href="personas.html" type="submit"
+                    class="bg-gray-500/50 border-solid border-2 border-blue-500/75">Buscar</a href=""></div>
+        </div>
     </div>
 </body>
 <script src="main2.js"></script>
