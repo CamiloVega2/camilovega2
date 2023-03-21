@@ -10,7 +10,7 @@
 </head>
 
 <body class="h-screen bg-gradient-to-r from-blue-100 to-green-900" id="body">
-    <div class="flex h-full w-full justify-between">
+    <div class="flex h-full w-full justify-evenly pt-[1%]">
         <div id="nombrescumple" class="w-[25%] ">
             <div class="flex">
                 <div class="text-center border-solid border border-blue-500/75 font-semibold w-1/2">Nombres
@@ -38,11 +38,14 @@
                     type="submit">Guardar</button>
             </form>
         </div>
-        <div class="flex">
-            <div><input id="buscar" type="text" class="border-solid border-2 border-blue-500/75"></div>
-            <div><a href="personas.html" type="submit"
-                    class="bg-gray-500/50 border-solid border-2 border-blue-500/75">Buscar</a href=""></div>
+        <div id="cajabuscar" class="flex flex-col">
+            <div class="flex">
+                <div><input id="datosbuscados" type="text" class="border-solid border-2 border-blue-500/75" maxlength="10"></div>
+                <div><button id="buscar" type="submit" class="bg-gray-500/50 border-solid border-2 border-blue-500/75">Buscar</button></div>
+            </div>
+            <div id="alert"></div>
         </div>
+    </div>
     </div>
 </body>
 <script src="main2.js"></script>

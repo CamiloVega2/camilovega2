@@ -21,13 +21,15 @@ const formulario = document.getElementById("formulario");
 const fechaactual = new Date();
 const datos = [];
 const body = document.getElementById("body");
-let cont = 0
+let cont = 0;
+const buscar = document.getElementById("buscar");
+const datosbuscados = document.getElementById("datosbuscados");
+const alerta = document.getElementById("alert");
 
-formulario.addEventListener("submit", form);
-
-function form(event) {
+formulario.addEventListener("submit", (event) => {
   event.preventDefault();
-}
+});
+
 function añadir() {
   let fechapersona = new Date(fechadenacimiento.value);
   let fechapersona1 = fechapersona.getDate() + 1;
@@ -57,17 +59,21 @@ function añadir() {
     } else {
       cajafechas.innerHTML += `<p>NO</p>`;
     }
-    localStorage.setItem(`${datos[cont].cedula}`,`${datos[cont].cedula}`)
-    console.log(`${datos[cont].cedula}`);
-    cont += 1
+    localStorage.setItem(`${datos[cont].cedula}`, `${datos[cont].cedula}`);
+    cont += 1;
     nombre.value = "";
     apellido.value = "";
     cedula.value = "";
     fechadenacimiento.value = "";
   }
 }
-function buscar() {
-  const buscar = document.getElementById("buscar")
-}
 
+function search() {
+  if (localStorage.getItem(`${datosbuscados.value}`) == datosbuscados.value) {
+    window.open("personas.html", "_self");
+  } else {
+    alerta.innerText = `Este usuario no esta registrado`;
+  }
+}
+buscar.addEventListener("click", search);
 btn.addEventListener("click", añadir);
