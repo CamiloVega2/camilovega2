@@ -4,9 +4,6 @@ let card = null;
 function setlocal(ev) {
   localStorage.setItem("id", ev.target.id);
 }
-function redirigir(ev){
-
-}
 const main = async () => {
   const response = await fetch("http://jsonplaceholder.typicode.com/posts");
   const data = await response.json();
